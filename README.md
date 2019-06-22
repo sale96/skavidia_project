@@ -1,3 +1,3 @@
-#skavidia web shop
-/n
+#skavidia
+
 This application is currently under development.
