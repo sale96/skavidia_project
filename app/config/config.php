@@ -1,5 +1,5 @@
 <?php
-define('SITE_NAME', 'skaVidia');
+define('SITE_NAME', 'SkaVidia');
 
 
 define('URL_ROOT', 'http://localhost:8080/skavidia_project/');

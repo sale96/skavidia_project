@@ -2,7 +2,7 @@
     <div class="container">
 
     </div>
-    <nav class="nav-extended">
+    <nav class="nav-extended bg-1">
         <div class="nav-wrapper">
             <a href="#" class="brand-logo ml-3"><?= SITE_NAME; ?></a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -13,8 +13,8 @@
         </div>
         <div class="nav-content">
             <ul class="tabs tabs-transparent ml-2">
-                <li class="tab"><a href="#test1">Test 1</a></li>
-                <li class="tab"><a class="active">Test 2</a></li>
+                <li class="tab"><a href="<?= URL_ROOT; ?>Pages/index">Home</a></li>
+                <li class="tab"><a href="<?= URL_ROOT; ?>Pages/about">About</a></li>
                 <li class="tab"><a href="#test4">Test 4</a></li>
             </ul>
         </div>
