@@ -4,10 +4,12 @@ require '../app/lib/Controller.php';
 class Pages extends Controller
 {
     public function index(){
-        $this->view('index/index');
+        $data['param'] = 'index';
+        $this->view('index/index', $data);
     }
 
     public function about(){
-        $this->view('about/about');
+        $data['param'] = 'about';
+        $this->view('about/about', $data);
     }
 }
