@@ -1,5 +1,5 @@
 <?php
-require '../app/views/fixed/header.php';
+require APP_ROOT.'\views\fixed\header.php';
 
-require '../app/views/fixed/footer.php';
+require APP_ROOT.'\views\fixed\footer.php';
 ?>
