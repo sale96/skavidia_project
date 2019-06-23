@@ -1,5 +1,5 @@
 <?php
-require 'lib/Controller.php';
+require '../app/lib/Controller.php';
 
 class Pages extends Controller
 {

@@ -13,7 +13,7 @@ class Core{
             unset($arr[0]);
         }
 
-        require "controllers/{$this->current_controller}.php";
+        require "../app/controllers/{$this->current_controller}.php";
         $this->current_controller = new $this->current_controller;
 
         if(isset($arr[1])){

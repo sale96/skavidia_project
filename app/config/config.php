@@ -3,10 +3,11 @@ define('SITE_NAME', 'skaVidia');
 
 
 define('URL_ROOT', 'http://localhost:8080/skavidia_project/');
+define('APP_ROOT', dirname(dirname(__FILE__)));
 
 //Important files
-define('ENV_FILE', URL_ROOT.'config/.env');
-define('LOG_FILE', URL_ROOT.'data/log.txt');
+define('ENV_FILE', APP_ROOT.'\config\.env');
+define('LOG_FILE', APP_ROOT.'\data\log.txt');
 
 //Database configuration
 define('DBNAME', Env('DBNAME'));
