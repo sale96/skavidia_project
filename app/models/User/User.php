@@ -32,6 +32,6 @@ class User
     }
 
     public function userUpdateImage(){
-        
+
     }
 }

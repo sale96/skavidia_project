@@ -17,7 +17,7 @@ class Log extends Controller {
             if(empty($username) || empty($password) || empty($email) || empty($rep_pass)){
                 echo "Fileds are not supposed to be empty";
             }else{
-
+                require APP_ROOT.'/helpers/regulars.php';
             }
         }
         $this->view('log/register/register');
