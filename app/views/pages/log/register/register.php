@@ -23,6 +23,7 @@
             </div>
             <div class="input-field">
                 <button name="register-submit" type="submit" class="waves-effect waves-light btn-large">Register</button>
+                <br><br>
                 <a href="<?= URL_ROOT ?>Log/login">Have account? Login</a>
             </div>
         </form>

@@ -14,8 +14,8 @@
                     <label for="login_password">Password</label>
                 </div>
                 <div class="input-field">
-                    <button name="login-submit" type="submit" class="waves-effect waves-light btn-large">Login</button>
-                    <a href="<?= URL_ROOT ?>Log/register">Don't have account?</a>
+                    <button name="login-submit" type="submit" class="waves-effect waves-light btn-large">Login</button><br><br>
+                    <a href="<?= URL_ROOT ?>Log/register">Don't have account?</a><br>
                     <a href="<?= URL_ROOT ?>Log/forgotPassword">Forgot your password?</a>
                 </div>
             </form>
