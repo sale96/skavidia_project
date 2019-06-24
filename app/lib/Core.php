@@ -8,7 +8,7 @@ class Core{
     public function __construct(){
         $arr = $this->getParams();
 
-        if(file_exists("controllers/{$arr[0]}.php")){
+        if(file_exists("../app/controllers/{$arr[0]}.php")){
             $this->current_controller = $arr[0];
             unset($arr[0]);
         }

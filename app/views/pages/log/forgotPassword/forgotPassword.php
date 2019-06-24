@@ -1,7 +1,5 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Sale
- * Date: 6/24/2019
- * Time: 7:22 PM
- */
+<?php require APP_ROOT.'\views\fixed\header.php'; ?>
+
+
+
+<?php require APP_ROOT.'\views\fixed\footer.php'; ?>

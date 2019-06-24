@@ -8,8 +8,8 @@
                 <a href="#" class="brand-logo"><?= SITE_NAME; ?></a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="sass.html"><i class="material-icons">person</i> Login</a></li>
-                    <li><a href="badges.html"><i class="material-icons">person_add</i> Register</a></li>
+                    <li><a href="<?= URL_ROOT; ?>Log/login"><i class="material-icons">person</i> Login</a></li>
+                    <li><a href="<?= URL_ROOT; ?>Log/register"><i class="material-icons">person_add</i> Register</a></li>
                 </ul>
             </div>
             <div class="nav-content">
@@ -22,9 +22,8 @@
     </nav>
 
     <ul class="sidenav" id="mobile-demo">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">JavaScript</a></li>
+        <li><a href="<?= URL_ROOT; ?>Log/login">Login</a></li>
+        <li><a href="<?= URL_ROOT; ?>Log/register">Register</a></li>
     </ul>
 
 <!--    <div id="test1" class="col s12 ml-3">Test 1</div>-->

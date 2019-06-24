@@ -8,6 +8,9 @@ class Log extends Controller {
     }
 
     public function Register(){
+        if(isset($_POST['register_submit'])){
+            echo '123';
+        }
         $this->view('log/register/register');
     }
 
