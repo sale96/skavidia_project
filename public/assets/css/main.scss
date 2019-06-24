@@ -1,6 +1,13 @@
 $main-color: #2269B3;
+
+
 body{
   padding-top: 120px;
+}
+@for $i from 1 through 6{
+  h#{$i}{
+  font-size: 1.2rem / ($i * 0.3);
+  }
 }
 .bg-1{
   background-color: $main-color;
@@ -9,6 +16,7 @@ body{
   position: fixed;
   left: 0;
   top: 0;
+  z-index: 9999;
 }
 .ml-2{
   margin-left: 2rem;
@@ -18,6 +26,9 @@ body{
 }
 .mr-3{
   margin-right: 3rem;
+}
+.mb-3{
+  margin-bottom: 3rem;
 }
 .material-icons{
   display: inline !important;
@@ -30,4 +41,7 @@ body{
   #showcase-center{
     padding: 10px;
   }
+}
+.card-title{
+  font-size: 1.2rem !important;
 }

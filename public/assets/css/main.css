@@ -1,13 +1,32 @@
 body {
   padding-top: 120px; }
 
+h1 {
+  font-size: 4rem; }
+
+h2 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 1.33333rem; }
+
+h4 {
+  font-size: 1rem; }
+
+h5 {
+  font-size: 0.8rem; }
+
+h6 {
+  font-size: 0.66667rem; }
+
 .bg-1 {
   background-color: #2269B3; }
 
 .fixed {
   position: fixed;
   left: 0;
-  top: 0; }
+  top: 0;
+  z-index: 9999; }
 
 .ml-2 {
   margin-left: 2rem; }
@@ -18,6 +37,9 @@ body {
 .mr-3 {
   margin-right: 3rem; }
 
+.mb-3 {
+  margin-bottom: 3rem; }
+
 .material-icons {
   display: inline !important;
   font-size: 1rem !important; }
@@ -26,5 +48,9 @@ body {
   width: 100%;
   height: 300px;
   background: #eee; }
-  #showcase #showcase-center {
-    padding: 10px; }
+
+#showcase #showcase-center {
+  padding: 10px; }
+
+.card-title {
+  font-size: 1.2rem !important; }
