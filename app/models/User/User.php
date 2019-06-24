@@ -17,7 +17,21 @@ class User
         $this->id = $_val->userID;
         $this->username = $_val->username;
         $this->email = $_val->email;
+    }
 
+    public function getUserStatus(){
+
+    }
+
+    public function userUpdateStatus(){
+
+    }
+
+    public function getImage(){
+
+    }
+
+    public function userUpdateImage(){
         
     }
 }
