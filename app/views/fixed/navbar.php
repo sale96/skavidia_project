@@ -8,8 +8,10 @@
                 <a href="#" class="brand-logo"><?= SITE_NAME; ?></a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <?php if(!User::isLogged()) : ?>
                     <li><a href="<?= URL_ROOT; ?>Log/login"><i class="material-icons">person</i> Login</a></li>
                     <li><a href="<?= URL_ROOT; ?>Log/register"><i class="material-icons">person_add</i> Register</a></li>
+                    <?php endif; ?>
                 </ul>
             </div>
             <div class="nav-content">

@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Sale
- * Date: 6/24/2019
- * Time: 9:58 PM
- */
+
 
 class User
 {
@@ -12,11 +7,15 @@ class User
     public $username;
     public $email;
 
-    public function __construct($_val)
+    public function __construct()
     {
-        $this->id = $_val->userID;
-        $this->username = $_val->username;
-        $this->email = $_val->email;
+//        $this->id = $_val->userID;
+//        $this->username = $_val->username;
+//        $this->email = $_val->email;
+    }
+
+    public static function isLogged(){
+        return isset($_SESSION['logged']);
     }
 
     public function getUserStatus(){

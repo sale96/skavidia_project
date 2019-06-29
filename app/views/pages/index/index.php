@@ -13,6 +13,7 @@
 
             <div class="divider mb-3"></div>
 
+            <?php if(!User::isLogged()) : ?>
             <div id="top-products" class="row">
 
 
@@ -109,7 +110,7 @@
 
             <!-- Top products end -->
             </div>
-
+            <?php endif; ?>
 
 
         </div>

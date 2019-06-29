@@ -2,8 +2,8 @@
 
 
 class Controller{
-    public function model($model){
-        require_once "../app/models/{$model}.php";
+    public function model($folder ,$model){
+        require_once "../app/models/{$folder}/{$model}.php";
 
         return new $model;
     }
