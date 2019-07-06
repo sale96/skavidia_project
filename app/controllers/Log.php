@@ -3,7 +3,7 @@
 require '../app/lib/Controller.php';
 
 class Log extends Controller {
-    
+
     public $user;
 
     public function __construct()
@@ -28,6 +28,7 @@ class Log extends Controller {
                 require APP_ROOT.'/helpers/regulars.php';
             }
         }
+
         $this->view('log/register/register');
     }
 
