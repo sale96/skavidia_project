@@ -16,8 +16,8 @@
             </div>
             <div class="nav-content">
                 <ul class="tabs tabs-transparent">
-                    <li class="tab"><a class="<?= $data['param'] == 'index' ? 'active' : ''; ?>" href="<?= URL_ROOT; ?>Pages/index">Home</a></li>
-                    <li class="tab"><a class="<?= $data['param'] == 'about' ? 'active' : ''; ?>" href="<?= URL_ROOT; ?>Pages/about">About</a></li>
+                    <li class="tab"><a class="<?= isset($data['param']) ? $data['param'] == 'index' ? 'active' : '' : ''; ?>" href="<?= URL_ROOT; ?>Pages/index">Home</a></li>
+                    <li class="tab"><a class="<?= isset($data['param']) ? $data['param'] == 'about' ? 'active' : '' : ''; ?>" href="<?= URL_ROOT; ?>Pages/about">About</a></li>
                 </ul>
             </div>
         </div>

@@ -3,6 +3,14 @@
 require '../app/lib/Controller.php';
 
 class Log extends Controller {
+    
+    public $user;
+
+    public function __construct()
+    {
+        $this->user = $this->model('User', 'User');
+    }
+
     public function login(){
         $this->view('log/login/login');
     }

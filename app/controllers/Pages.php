@@ -4,10 +4,9 @@ require '../app/lib/Controller.php';
 class Pages extends Controller
 {
     public $user;
-
     public function __construct()
     {
-        $user = $this->model('User','User');
+        $this->user = $this->model('User', 'User');
     }
 
     public function index(){

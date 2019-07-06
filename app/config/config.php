@@ -2,7 +2,7 @@
 define('SITE_NAME', 'SkaVidia');
 
 
-define('URL_ROOT', 'http://localhost:8080/skavidia_project/');
+define('URL_ROOT', 'http://localhost/skavidia_project/');
 define('APP_ROOT', dirname(dirname(__FILE__)));
 
 //Important files
