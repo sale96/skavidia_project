@@ -1,4 +1,4 @@
-<?php require APP_ROOT.'\views\fixed\header.php'; ?>
+
 
 <div class="container">
     <div id="showcase" class="valign-wrapper">
@@ -13,7 +13,6 @@
 
             <div class="divider mb-3"></div>
 
-            <?php if(!User::isLogged()) : ?>
             <div id="top-products" class="row">
 
 
@@ -110,7 +109,6 @@
 
             <!-- Top products end -->
             </div>
-            <?php endif; ?>
 
 
         </div>
@@ -121,7 +119,6 @@
 </div>
 
 
-<?php require APP_ROOT.'\views\fixed\footer.php'; ?>
 
 
 

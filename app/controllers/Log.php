@@ -9,6 +9,11 @@ class Log extends Controller {
     public function __construct()
     {
         $this->user = $this->model('User', 'User');
+
+        if(User::isLogged()){
+            header("Location: ". URL_ROOT);
+            exit();
+        }
     }
 
     public function login(){

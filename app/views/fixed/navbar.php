@@ -11,6 +11,9 @@
                     <?php if(!User::isLogged()) : ?>
                     <li><a href="<?= URL_ROOT; ?>Log/login"><i class="material-icons">person</i> Login</a></li>
                     <li><a href="<?= URL_ROOT; ?>Log/register"><i class="material-icons">person_add</i> Register</a></li>
+                    <?php else: ?>
+                    <li><a href="<?= URL_ROOT; ?>Users/inbox"><i class="material-icons">mail_outline</i></a></li>
+                    <li><a href="<?= URL_ROOT; ?>Users/profile"><i class="material-icons">person_pin</i> </a></li>
                     <?php endif; ?>
                 </ul>
             </div>

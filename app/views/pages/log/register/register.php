@@ -1,4 +1,4 @@
-<?php require APP_ROOT.'\views\fixed\header.php'; ?>
+
 <div class="title-bar">
     <h1>Register</h1>
 </div>
@@ -29,5 +29,3 @@
         </form>
     </div>
 </div>
-
-<?php require APP_ROOT.'\views\fixed\footer.php'; ?>

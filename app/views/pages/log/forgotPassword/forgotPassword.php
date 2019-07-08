@@ -1,4 +1,3 @@
-<?php require APP_ROOT.'\views\fixed\header.php'; ?>
 
     <div class="title-bar">
         <h1>Forgot password?</h1>
@@ -17,5 +16,3 @@
             </form>
         </div>
     </div>
-
-<?php require APP_ROOT.'\views\fixed\footer.php'; ?>
