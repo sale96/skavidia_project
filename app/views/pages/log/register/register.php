@@ -14,11 +14,11 @@
                 <label for="register_email">Email</label>
             </div>
             <div class="input-field">
-                <input type="text" id="register_password" name="register_password">
+                <input type="password" id="register_password" name="register_password">
                 <label for="register_password">Password</label>
             </div>
             <div class="input-field">
-                <input type="text" id="register_rep_password" name="register_rep_password">
+                <input type="password" id="register_rep_password" name="register_rep_password">
                 <label for="register_rep_password">Repeat Password</label>
             </div>
             <div class="input-field">

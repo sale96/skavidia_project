@@ -10,7 +10,7 @@
                     <label for="login_name">Username</label>
                 </div>
                 <div class="input-field">
-                    <input type="text" id="login_password" name="login_password">
+                    <input type="password" id="login_password" name="login_password">
                     <label for="login_password">Password</label>
                 </div>
                 <div class="input-field">

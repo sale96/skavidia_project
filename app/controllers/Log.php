@@ -21,6 +21,7 @@ class Log extends Controller {
     }
 
     public function register(){
+        $data['error'] = [];
         if(isset($_POST['register-submit'])){
             $username = $_POST['register_name'];
             $password = $_POST['register_password'];
@@ -31,6 +32,22 @@ class Log extends Controller {
                 echo "Fileds are not supposed to be empty";
             }else{
                 require APP_ROOT.'/helpers/regulars.php';
+
+                if(!preg_match($usernameRegular, $username)){
+                    array_push($data['error'], 'Username is not valid.');
+                }
+
+                if(!preg_match($passwordRegular, $password)){
+                    array_push($data['error'], 'Password must contain at least 8 characters, at least 1 letter, at least 1 number.');
+                }
+
+                if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+                    array_push($data['error'], 'Your email address is not valid.');
+                }
+
+                if(count($data['error']) == 0){
+                    $conn = $database->getConnection();
+                }
             }
         }
 
