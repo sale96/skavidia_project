@@ -27,5 +27,19 @@
                 <a href="<?= URL_ROOT ?>Log/login">Have account? Login</a>
             </div>
         </form>
+        <div class="col s6 offset-s3">
+            <?php
+            if(isset($data['error'])){
+                if(is_array($data['error'])){
+                    foreach($data['error'] as $value){
+                        echo "<p class='card-panel red darken-3 white-text'>{$value}</p>";
+                    }
+                }else{
+                    echo "<p class='card-panel red darken-3 white-text'>{$data['error']}</p>";
+                }
+                unset($data['error']);
+            }
+            ?>
+        </div>
     </div>
 </div>

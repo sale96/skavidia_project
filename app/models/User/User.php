@@ -2,17 +2,16 @@
 
 class User
 {
-    private $id;
-    public $username;
-    public $email;
-    public $statusID;
-    public $statusName;
-
     public static function isLogged(){
         return isset($_SESSION['logged']);
     }
 
-    public function GetUserInfo(){
+    public static function setUser($id){
+        $_SESSION['logged'] = $id;
+    }
 
+    public static function GetUserInfo(){
+        if(isset($_SESSION['logged'])){
+        }
     }
 }

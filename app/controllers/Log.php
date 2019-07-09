@@ -29,7 +29,7 @@ class Log extends Controller {
             $rep_pass = $_POST['register_rep_password'];
 
             if(empty($username) || empty($password) || empty($email) || empty($rep_pass)){
-                echo "Fileds are not supposed to be empty";
+                array_push($data['error'], 'Fileds are not supposed to be empty.');
             }else{
                 require APP_ROOT.'/helpers/regulars.php';
 
@@ -45,13 +45,32 @@ class Log extends Controller {
                     array_push($data['error'], 'Your email address is not valid.');
                 }
 
+                if($password != $rep_pass){
+                    array_push($data['error'], 'Passwords does not match.');
+                }
+
                 if(count($data['error']) == 0){
+                    global $database;
                     $conn = $database->getConnection();
+
+                    $hashed = md5(time()).md5($username);
+                    $password = md5($password);
+
+                    $query = "INSERT INTO users(username, email, password, hashed, banID, roleID) VALUES(?,?,?,?,?,?)";
+                    $prep = $conn->prepare($query);
+
+                    if($prep->execute([$username, $email, $password, $hashed, 4, 2])){
+                        echo '<div class="row">';
+                        echo '<div class="col s6 offset-s3">';
+                        echo "<p class='card-panel teal accent-3 white-text'>You have been registrated on website, {$username}, please verify your email adress.</p>";
+                        echo '</div>';
+                        echo '</div>';
+                    }
                 }
             }
         }
 
-        $this->view('log/register/register');
+        $this->view('log/register/register', $data);
     }
 
     public function forgotPassword(){
